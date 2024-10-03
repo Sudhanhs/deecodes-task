@@ -39,7 +39,8 @@ function moveToSlide(n) {
 
     if (currentSlide >= totalSlides) {
         currentSlide = 0;
-    } else if (currentSlide < 0) {
+    } 
+    else if (currentSlide < 0) {
         currentSlide = totalSlides - 1;
     }
 

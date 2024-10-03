@@ -4,11 +4,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.tabview{
+.tabview {
     display: none;
 }
 
-.all-list{
+.all-list {
     display: none;
 }
 
@@ -71,7 +71,7 @@ nav ul li:hover {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; 
+    width: 100%;
 }
 
 .slide {
@@ -84,7 +84,16 @@ nav ul li:hover {
     height: auto;
 }
 
-.slide .slide-content {
+.slide .slide-content-1 {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    width: 403px;
+    height: max-content;
+    padding: 50px;
+}
+
+.slide .slide-content-2 {
     position: absolute;
     top: 50px;
     left: 70px;
@@ -114,7 +123,17 @@ nav ul li:hover {
     width: 100%;
 }
 
-.slide-content a {
+.slide .slide-content-1 a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(30, 96, 177);
+    padding: 10px 10px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.slide .slide-content-2 a {
     text-align: center;
     text-decoration: none;
     color: white;
@@ -151,11 +170,11 @@ nav ul li:hover {
 }
 
 .slider-icon .indicator i.bi-circle-fill {
-    color: black; 
+    color: black;
 }
 
 .slider-icon .indicator i.bi-circle {
-    color: black; 
+    color: black;
 }
 
 #prev {
@@ -167,11 +186,11 @@ nav ul li:hover {
 }
 
 #prev:hover {
-    margin-right: 20px; 
-    transition: 0.5s;   
+    margin-right: 20px;
+    transition: 0.5s;
 }
 
-#next:hover{
+#next:hover {
     margin-left: 20px;
     transition: 0.5s;
 }
@@ -345,7 +364,7 @@ nav ul li:hover {
 .backto {
     margin-left: 1220px;
     margin-bottom: 55px;
-    
+
 }
 
 .backto button {
@@ -432,37 +451,37 @@ footer .down ul li a:hover {
 
 @media only screen and (max-width: 769px) {
 
-    .normalview{
+    .normalview {
         display: none;
     }
 
-    .all-list{
+    .all-list {
         display: none;
         position: absolute;
         top: 55px;
         width: 100%;
         z-index: 10;
         background-color: whitesmoke;
-        
+
     }
 
-    .all-list ul li{
-        list-style: none;  
+    .all-list ul li {
+        list-style: none;
         padding: 15px;
         margin-left: -20px;
         font-size: 18px;
     }
 
-    .all-list ul li a{
+    .all-list ul li a {
         color: black;
         text-decoration: none;
     }
 
-    .ul-list{
+    .ul-list {
         display: none;
     }
 
-    .btn-list{
+    .btn-list {
         border: none;
         background-color: whitesmoke;
         margin-left: -5px;
@@ -472,11 +491,11 @@ footer .down ul li a:hover {
         text-align: left;
     }
 
-    .btn-list i{
+    .btn-list i {
         float: right;
     }
 
-    .tabview{
+    .tabview {
         height: 56px;
         width: 100%;
         display: flex !important;
@@ -488,38 +507,38 @@ footer .down ul li a:hover {
         margin-left: 10px;
         width: 20%;
         cursor: pointer;
-        
+
     }
 
-    .tabicon span i{
+    .tabicon span i {
         font-size: 20px;
         margin-left: 15px;
 
     }
 
-    .tablogo{
+    .tablogo {
         width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .tablogo img{
+    .tablogo img {
         width: 40%;
     }
 
-    .tabview-right{
+    .tabview-right {
         width: 20%;
         cursor: pointer;
     }
 
-    .tabview-right span i{
+    .tabview-right span i {
         font-size: 20px;
         margin-left: 30px;
 
     }
 
-    .slider{
+    .slider {
         width: 100%;
     }
 
@@ -527,8 +546,8 @@ footer .down ul li a:hover {
         display: none;
     }
 
-    .slider {
-        background-image: url("./images/tabhaomepic.avif");
+    .slide {
+        background-image: url(./images/tobsilder-1.avif);
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0px;
@@ -536,21 +555,38 @@ footer .down ul li a:hover {
         height: 730px;
     }
 
-    .slider .slide-content {
+    #slide-2 {
+        background-image: url(./images/tabhaomepic.avif);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0px;
+        width: 100%;
+        height: 730px;
+
+    }
+
+    .slider .slide-content-1 {
         position: absolute;
         top: 505px;
         left: 27px;
         padding: 0;
         width: 100%;
         height: max-content;
-
-    
     }
 
-    .slide-content .para{
+    .slider .slide-content-2 {
+        position: absolute;
+        top: 505px;
+        left: 27px;
+        padding: 0;
+        width: 92%;
+        height: max-content;
+    }
+
+    .slide-content .para {
         width: 704px;
     }
-    
+
 
     .slider-icon {
         padding: 20px 0;
@@ -655,16 +691,16 @@ footer .down ul li a:hover {
     .backto {
         margin-left: 220px;
         margin-bottom: 55px;
-        
+
     }
-    
+
     .backto button {
         height: 40px;
         width: 110px;
         border: none;
         border-radius: 2px;
         margin-left: 420px;
-    
+
     }
 
     footer {
@@ -678,7 +714,7 @@ footer .down ul li a:hover {
         gap: 70px;
     }
 
-    footer .lists{
+    footer .lists {
         width: 26%;
     }
 
@@ -711,11 +747,11 @@ footer .down ul li a:hover {
 }
 
 @media only screen and (max-width: 425px) {
-    .normalview{
+    .normalview {
         display: none;
     }
-    
-    .tabview{
+
+    .tabview {
         height: 56px;
         width: 100%;
         display: flex !important;
@@ -726,30 +762,30 @@ footer .down ul li a:hover {
         margin-left: 10px;
         width: 30%;
         cursor: pointer;
-        
+
     }
 
-    .tabicon span i{
+    .tabicon span i {
         font-size: 20px;
         margin-left: 12px;
 
     }
 
-    .tablogo{
+    .tablogo {
         width: 30%;
     }
 
-    .tablogo img{
+    .tablogo img {
         width: 145px;
         margin-left: -47px;
-    } 
+    }
 
-    .tabview-right{
+    .tabview-right {
         width: 20%;
         cursor: pointer;
     }
 
-    .tabview-right span i{
+    .tabview-right span i {
         font-size: 20px;
         margin-left: 7px;
 
@@ -766,20 +802,39 @@ footer .down ul li a:hover {
         margin: 0px;
         width: 100%;
         height: 519px;
-
     }
 
-    .slide .slide-content {
+    .slide .slide-content-1 {
         position: absolute;
         top: 290px;
         left: 19px;
         margin: 0;
-        width: 96%;
+        width: 100%;
     }
 
-    
-    .slide-content .para{
-        width: 91%;
+    #slide-2 {
+        background-image: url(./images/mobhomepic.avif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0px;
+        width: 100%;
+        height: 519px;
+    }
+
+    .slide .slide-content-2 {
+        position: absolute;
+        top: 290px;
+        left: 19px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .slide-content-1 .para {
+        width: 95%;
+    }
+
+    .slide-content-2 .para {
+        width: 93%;
     }
 
     .slider-icon {
@@ -810,6 +865,7 @@ footer .down ul li a:hover {
         align-items: center;
         gap: 20px;
         margin: 20px 0;
+        width: 99%;
     }
 
     .card-img img {
@@ -817,7 +873,7 @@ footer .down ul li a:hover {
     }
 
     .card {
-        width: 395px !important;
+        width: 95% !important;
         height: min-content;
         margin-top: 10px;
     }
@@ -885,9 +941,8 @@ footer .down ul li a:hover {
         height: 40px;
         border: none;
         border-radius: 2px;
-        margin-left: 80px;
+        margin-left: 39%;
         margin-top: 25px;
-            
     }
 
     footer {
@@ -900,7 +955,7 @@ footer .down ul li a:hover {
         margin-left: 4px;
     }
 
-    footer .lists{
+    footer .lists {
         width: 100%;
     }
 
@@ -921,3 +976,65 @@ footer .down ul li a:hover {
 
 }
 
+@media only screen and (max-width: 320px) {
+
+    .slider {
+        background-image: url("./images/mobhomepic.avif");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0px;
+        width: 100%;
+        height: 457px;
+    }
+
+    .slide .slide-content-1 {
+        position: absolute;
+        top: 220px;
+        left: 12px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .slide .slide-content-2 {
+        position: absolute;
+        top: 220px;
+        left: 12px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card {
+        width: 293px !important;
+        height: min-content;
+        margin-top: 10px;
+    }
+
+    .game-pass {
+        background-image: url("./images/mobpic.avif");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0px;
+        width: 88%;
+        height: 475px;
+        margin-left: 16px;
+        margin-top: 33px;
+    }
+
+    .follow .spans {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .follow {
+        padding-left: 28px;
+    }
+
+    .backto button {
+        height: 40px;
+        border: none;
+        border-radius: 2px;
+        margin-left: -10px;
+        margin-top: 25px;
+    }
+
+}
